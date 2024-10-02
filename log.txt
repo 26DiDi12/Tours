@@ -1,0 +1,41 @@
+[33mcommit 80aea048ae806beca7ca9c470c5c826501c48f0d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: leranova2 <novgorodova-lerochka@mail.ru>
+Date:   Wed Oct 2 14:39:03 2024 +0900
+
+    new ignore file, wow
+
+[33mcommit 7456e229b8b917d296d6f76da803d3b26aa941c3[m
+Author: leranova2 <novgorodova-lerochka@mail.ru>
+Date:   Wed Oct 2 14:23:41 2024 +0900
+
+    OH, first file deleted... but second file repeat him
+
+[33mcommit cf5abdbb40c0aba2170578ea62a92f2ed0a3a0aa[m
+Author: leranova2 <novgorodova-lerochka@mail.ru>
+Date:   Wed Oct 2 14:21:01 2024 +0900
+
+    lol first_file edited again
+
+[33mcommit 803721bd3a4b70692116a8b1fb9460a628d127e7[m
+Author: leranova2 <novgorodova-lerochka@mail.ru>
+Date:   Wed Oct 2 14:20:41 2024 +0900
+
+    lol first_file edited
+
+[33mcommit c56a572e777f30745d87ba66ee237d4d80f78b15[m
+Author: leranova2 <novgorodova-lerochka@mail.ru>
+Date:   Wed Oct 2 14:19:39 2024 +0900
+
+    HELLO FILE .GITIGNORE and NEW FOLDER LOGgit status!
+
+[33mcommit 9e9d93334ed2b56f447118da56741958f4cd6c87[m
+Author: leranova2 <novgorodova-lerochka@mail.ru>
+Date:   Wed Oct 2 14:15:04 2024 +0900
+
+    holy moly! second txt filegit status!
+
+[33mcommit e55239aa6ceb81a1e1859eddcafbd5870d336d64[m
+Author: leranova2 <novgorodova-lerochka@mail.ru>
+Date:   Wed Oct 2 14:13:52 2024 +0900
+
+    yo! new txt file
