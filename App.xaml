@@ -7,7 +7,9 @@
         <Style TargetType="Button">
             <Setter Property="Width" Value="120"></Setter>
             <Setter Property="Height" Value="35"></Setter>
-            <Setter Property="Background" Value="Yellow"></Setter>
+            <Setter Property="Background" Value="White"></Setter>
+            <Setter Property="Cursor" Value="Hand"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
         </Style>
     </Application.Resources>
 </Application>

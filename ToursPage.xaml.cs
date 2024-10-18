@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace Туры
 {
     /// <summary>
-    /// Логика взаимодействия для Tours.xaml
+    /// Логика взаимодействия для ToursPage.xaml
     /// </summary>
-    public partial class Tours : Page
+    public partial class ToursPage : Page
     {
-        public Tours()
+        public ToursPage()
         {
             InitializeComponent();
-        }
-
-        private void BtnClick(object sender, RoutedEventArgs e)
-        {
-            Manager.MainFrame.Navigate(new AddEditPage());
         }
     }
 }

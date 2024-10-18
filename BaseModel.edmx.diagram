@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b6fa1b0ff2814a87b6d179f7c155e503" Name="Diagram1">
+        <EntityTypeShape EntityType="ToursDBModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ToursDBModel.Tours" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ToursDBModel.Ваучеры" Width="1.5" PointX="7.5" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ToursDBModel.Документы" Width="1.5" PointX="7.5" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ToursDBModel.Заявки" Width="1.5" PointX="7.5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ToursDBModel.Клиенты" Width="1.5" PointX="5.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="ToursDBModel.Отели" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ToursDBModel.Отзывы_отелей" Width="1.5" PointX="10.5" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ToursDBModel.Страны" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ToursDBModel.Типы_питания" Width="1.5" PointX="5.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ToursDBModel.Типы_туров" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ToursDBModel.Услуги" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <AssociationConnector Association="ToursDBModel.FK_Заявки_Туры" ManuallyRouted="false" />
+        <AssociationConnector Association="ToursDBModel.FK_Туры_Страны" ManuallyRouted="false" />
+        <AssociationConnector Association="ToursDBModel.FK_Туры_Типы_туров" ManuallyRouted="false" />
+        <AssociationConnector Association="ToursDBModel.FK_Ваучеры_Клиенты" ManuallyRouted="false" />
+        <AssociationConnector Association="ToursDBModel.FK_Документы_Клиенты" ManuallyRouted="false" />
+        <AssociationConnector Association="ToursDBModel.FK_Заявки_Клиенты" ManuallyRouted="false" />
+        <AssociationConnector Association="ToursDBModel.FK_Заявки_Типы_питания" ManuallyRouted="false" />
+        <AssociationConnector Association="ToursDBModel.FK_Заявки_Услуги" ManuallyRouted="false" />
+        <AssociationConnector Association="ToursDBModel.FK_Клиенты_Отели" ManuallyRouted="false" />
+        <AssociationConnector Association="ToursDBModel.FK_Отзывы_отелей_Клиенты" ManuallyRouted="false" />
+        <AssociationConnector Association="ToursDBModel.FK_Отели_Страны" ManuallyRouted="false" />
+        <AssociationConnector Association="ToursDBModel.FK_Отзывы_отелей_Отели" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

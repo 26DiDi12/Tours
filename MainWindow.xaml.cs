@@ -23,7 +23,7 @@ namespace Туры
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new Tours());
+            MainFrame.Navigate(new HotelsPage());
             Manager.MainFrame = MainFrame;
         }
 
@@ -45,12 +45,12 @@ namespace Туры
 
         private void BtnHotels_Click(object sender, RoutedEventArgs e)
         {
-
+            Manager.MainFrame.Navigate(new HotelsPage());
         }
 
         private void BtnTours_Click(object sender, RoutedEventArgs e)
         {
-
+            Manager.MainFrame.Navigate(new ToursPage());
         }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Туры"
         mc:Ignorable="d"
-        Title="Global Explorers" Height="450" Width="800" Icon="Resources/ToursLogo.png">
+        Title="Global Explorers" Height="550" Width="800" Icon="Resources/ToursLogo.png">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Resources/Curort1.jpg" Stretch="UniformToFill"></ImageBrush>
@@ -32,8 +32,8 @@
             <TextBlock FontSize="25" Foreground="White" VerticalAlignment="Center" Padding="10 0 0 0">Explorers</TextBlock>
         </StackPanel>
         <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Horizontal" Margin="0 0 15 0">
-            <Button Name="BtnTours" Cursor="Hand" BorderBrush="Transparent" Background="White" Click="BtnTours_Click" Margin="0 0 15 0" FontSize="15">Туры</Button>
-            <Button Name="BtnHotels" Cursor="Hand" BorderBrush="Transparent" Background="White" Click="BtnHotels_Click" FontSize="15">Отели</Button>
+            <Button Name="BtnTours" Click="BtnTours_Click" Margin="0 0 15 0">Туры</Button>
+            <Button Name="BtnHotels" Click="BtnHotels_Click">Отели</Button>
         </StackPanel>
     </Grid>
 </Window>
