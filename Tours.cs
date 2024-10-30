@@ -18,6 +18,7 @@ namespace Туры
         public Tours()
         {
             this.Заявки = new HashSet<Заявки>();
+            this.Типы_туров1 = new HashSet<Типы_туров>();
         }
     
         public int ID { get; set; }
@@ -27,10 +28,12 @@ namespace Туры
         public Nullable<int> Стоимость { get; set; }
         public Nullable<bool> Статус { get; set; }
         public Nullable<int> Типы_туров { get; set; }
+        public byte[] Превью { get; set; }
     
+        public virtual Страны Страны { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Заявки> Заявки { get; set; }
-        public virtual Страны Страны { get; set; }
-        public virtual Типы_туров Типы_туров1 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Типы_туров> Типы_туров1 { get; set; }
     }
 }

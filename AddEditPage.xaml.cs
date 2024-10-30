@@ -1,17 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Туры
 {
@@ -25,7 +16,7 @@ namespace Туры
         public AddEditPage(Отели selectedHotel)
         {
             InitializeComponent();
-            ComboCountries.ItemsSource = ToursDBEntities.GetContext().Страны.ToList();
+            ComboCountries.ItemsSource = ToursDBEntities3.GetContext().Страны.ToList();
 
             if (selectedHotel != null)
             {
@@ -48,7 +39,7 @@ namespace Туры
             if (ComboCountries.SelectedItem == null)
                 errors.AppendLine("Выберите страну");
             else
-                _currentHotel.Страна = ToursDBEntities.GetContext().Страны.ToList()[ComboCountries.SelectedIndex].Код_страны.ToString();
+                _currentHotel.Страна = ToursDBEntities3.GetContext().Страны.ToList()[ComboCountries.SelectedIndex].Код_страны.ToString();
                
             if(errors.Length > 0)
             {
@@ -57,11 +48,11 @@ namespace Туры
             }
 
             if (_currentHotel.ID == 0)
-                ToursDBEntities.GetContext().Отели.Add(_currentHotel);
+                ToursDBEntities3.GetContext().Отели.Add(_currentHotel);
 
             try
             {
-                ToursDBEntities.GetContext().SaveChanges();
+                ToursDBEntities3.GetContext().SaveChanges();
                 MessageBox.Show("Информация сохранена");
             }
             catch (Exception ex)

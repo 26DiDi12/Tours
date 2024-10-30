@@ -83,6 +83,16 @@ namespace Туры.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap notimg {
+            get {
+                object obj = ResourceManager.GetObject("notimg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ToursLogo {
             get {
                 object obj = ResourceManager.GetObject("ToursLogo", resourceCulture);

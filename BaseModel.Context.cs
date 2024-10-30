@@ -13,19 +13,19 @@ namespace Туры
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ToursDBEntities : DbContext
+    public partial class ToursDBEntities3 : DbContext
     {
-        private static ToursDBEntities _context;
+        private static ToursDBEntities3 _context;
 
-        public ToursDBEntities()
-            : base("name=ToursDBEntities")
+        public ToursDBEntities3()
+            : base("name=ToursDBEntities3")
         {
         }
 
-        public static ToursDBEntities GetContext()
+        public static ToursDBEntities3 GetContext()
         {
             if (_context == null)
-                _context = new ToursDBEntities();
+                _context = new ToursDBEntities3();
             return _context;
         }
 
@@ -33,7 +33,7 @@ namespace Туры
         {
             throw new UnintentionalCodeFirstException();
         }
-
+    
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Tours> Tours { get; set; }
         public virtual DbSet<Ваучеры> Ваучеры { get; set; }

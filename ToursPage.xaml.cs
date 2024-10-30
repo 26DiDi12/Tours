@@ -23,6 +23,8 @@ namespace Туры
         public ToursPage()
         {
             InitializeComponent();
+            var currentTours = ToursDBEntities3.GetContext().Tours.ToList();
+            LViewTours.ItemsSource = currentTours;
         }
     }
 }

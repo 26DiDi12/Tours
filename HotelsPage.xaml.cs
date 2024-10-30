@@ -23,7 +23,7 @@ namespace Туры
         public HotelsPage()
         {
             InitializeComponent();
-            DGridHotels.ItemsSource = ToursDBEntities.GetContext().Отели.ToList();
+            DGridHotels.ItemsSource = ToursDBEntities3.GetContext().Отели.ToList();
         }
 
         private void BtnClick(object sender, RoutedEventArgs e)
@@ -45,11 +45,11 @@ namespace Туры
             {
                 try
                 {
-                    ToursDBEntities.GetContext().Отели.RemoveRange(hotelsForRemoving);
-                    ToursDBEntities.GetContext().SaveChanges();
+                    ToursDBEntities3.GetContext().Отели.RemoveRange(hotelsForRemoving);
+                    ToursDBEntities3.GetContext().SaveChanges();
                     MessageBox.Show("Данные удалены!");
 
-                    DGridHotels.ItemsSource = ToursDBEntities.GetContext().Отели.ToList();
+                    DGridHotels.ItemsSource = ToursDBEntities3.GetContext().Отели.ToList();
                 }
                 catch (Exception ex)
                 {
@@ -67,8 +67,8 @@ namespace Туры
         {
             if(Visibility == Visibility.Visible)
             {
-                ToursDBEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
-                DGridHotels.ItemsSource = ToursDBEntities.GetContext().Отели.ToList();
+                ToursDBEntities3.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                DGridHotels.ItemsSource = ToursDBEntities3.GetContext().Отели.ToList();
             }
         }
     }
