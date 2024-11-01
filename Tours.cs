@@ -29,7 +29,22 @@ namespace Туры
         public Nullable<bool> Статус { get; set; }
         public Nullable<int> Типы_туров { get; set; }
         public byte[] Превью { get; set; }
-    
+
+        public string Актуальность
+        {
+            get
+            {
+                return (Статус.Value) ? "Актуален" : "Завершен";
+            }
+        }
+        public string НазваниеТрим
+        {
+            get
+            {
+                return Название.Trim();
+            }
+        }
+
         public virtual Страны Страны { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Заявки> Заявки { get; set; }

@@ -58,7 +58,6 @@ namespace Туры
             catch (Exception ex)
             {
                 MessageBox.Show(ex.InnerException.Message.ToString());
-                //ComboCountries.Text
             }
 
             Manager.MainFrame.Navigate(new HotelsPage());

@@ -26,17 +26,6 @@ namespace Туры
             InitializeComponent();
             MainFrame.Navigate(new ToursPage());
             Manager.MainFrame = MainFrame;
-            string array = "";
-            foreach (var tour in ToursDBEntities3.GetContext().Tours.ToList())
-            {
-                array += tour.Название + " - ";
-                foreach (var item in tour.Типы_туров1)
-                {
-                    array += item.Тип + ",";
-                }
-                array += "\n";
-            }
-            //MessageBox.Show(array);
         }
 
         private void BtnBackClick(object sender, RoutedEventArgs e)
@@ -78,13 +67,7 @@ namespace Туры
 
         private void MainFrame_ContentRendered(object sender, EventArgs e)
         {
-            /* if(MainFrame.CanGoBack)
-            {
-                BtnBack.Visibility = Visibility.Visible;
-            } else
-            {
-                BtnBack.Visibility = Visibility.Hidden;
-            } */
+
         }
 
         private void BtnHotels_Click(object sender, RoutedEventArgs e)
